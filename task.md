@@ -1,5 +1,7 @@
-1.  given input "a"
-    when CreatePermutation.cal(input)
+1.  given one char "a"
+    when call CreatePermutation.cal()
     then return ["a"]
 
-2.
+2.  given two chars "ab"
+    when call CreatePermutation.cal()
+    then return ["ab","ba"]

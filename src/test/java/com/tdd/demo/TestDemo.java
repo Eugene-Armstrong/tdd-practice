@@ -21,7 +21,16 @@ public class TestDemo {
         List<String> permutation = CreatePermutation.cal(input);
         //then
         assertEquals(Arrays.asList("a"),permutation);
-
-
     }
+
+    @Test
+    public void should_return_ab_ba_when_input_ab() {
+        //given
+        String input = "ab";
+        //when
+        List<String> permutation = CreatePermutation.cal(input);
+        //then
+        assertEquals(Arrays.asList("ab","ba"),permutation);
+    }
+
 }
