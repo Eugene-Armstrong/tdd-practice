@@ -33,4 +33,14 @@ public class TestDemo {
         assertEquals(Arrays.asList("ab","ba"),permutation);
     }
 
+    @Test
+    public void should_return_abc_acb_bac_bca_cab_cba_when_input_abc() {
+        //given
+        String input = "abc";
+        //when
+        List<String> permutation = CreatePermutation.cal(input);
+        //then
+        assertEquals(Arrays.asList("abc","acb","bac","bca","cab","cba"),permutation);
+    }
+
 }
