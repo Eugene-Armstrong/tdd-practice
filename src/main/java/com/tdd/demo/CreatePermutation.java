@@ -5,6 +5,6 @@ import java.util.List;
 
 public class CreatePermutation {
     public static List<String> cal(String input) {
-        return null;
+        return Arrays.asList(input);
     }
 }
